@@ -20,35 +20,35 @@ To install this version of Wingpanel, you'll need the following dependencies:
 
 You can install these dependencies on Ubuntu-based systems using the command:
 
-\```bash
+```bash
 sudo apt-get update
-sudo apt-get install -y \
-    build-essential \
-    valac \
-    libglib2.0-dev \
-    libgee-0.8-dev \
-    libgtk-3-dev \
-    libwnck-3-dev \
-    libgranite-dev \
-    gettext \
-    libmutter-10-dev \
-    libmutter-cogl-10-dev \
-    libmutter-cogl-pango-10-dev \
-    libmutter-clutter-10-dev \
-    gir1.2-mutter-10 \
-    libgala-dev \
+sudo apt-get install -y 
+    build-essential 
+    valac 
+    libglib2.0-dev 
+    libgee-0.8-dev 
+    libgtk-3-dev 
+    libwnck-3-dev 
+    libgranite-dev 
+    gettext 
+    libmutter-10-dev 
+    libmutter-cogl-10-dev 
+    libmutter-cogl-pango-10-dev 
+    libmutter-clutter-10-dev 
+    gir1.2-mutter-10 
+    libgala-dev 
     meson
-\```
+```
 
 After installing the dependencies, you can build and install Wingpanel using the following commands:
 
-\```bash
+```bash
 meson build --prefix=/usr
 cd build
 ninja
 sudo ninja install
 io.elementary.wingpanel
-\```
+```
 
 ## Preventing Wingpanel from restarting, e.g. for development
 
